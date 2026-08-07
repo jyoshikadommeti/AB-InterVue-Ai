@@ -1,10 +1,11 @@
-from flask import Flask
-
+from flask import Flask,
+remder_template
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Welcome to AB InterVue AI"
+    return
+render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
