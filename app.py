@@ -162,7 +162,7 @@ Candidate answers:
         return f"<p>{feedback.replace(chr(10), '<br>')}</p>"
 
     except Exception as e:
-    print("OPENAI ERROR:", repr(e))
+        print("OPENAI ERROR:", repr(e))
         return """
         <p>
         AI evaluation is temporarily unavailable.
